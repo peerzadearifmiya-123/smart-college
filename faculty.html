@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Faculty Dashboard</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+    <nav>
+
+        <h2>Faculty Dashboard</h2>
+
+        <button onclick="darkMode()"
+                class="theme-toggle-btn">
+
+            Dark Mode
+
+        </button>
+
+    </nav>
+
+    <div class="dashboard">
+
+        <div class="grid">
+
+            <div class="card">
+
+                <h2>Upload Assignment</h2>
+
+                <input type="text"
+                       id="new-assignment"
+                       placeholder="Assignment Name">
+
+                <button onclick="dbPublishAssignment()">
+
+                    Upload
+
+                </button>
+
+            </div>
+
+            <div class="card">
+
+                <h2>Announcement</h2>
+
+                <input type="text"
+                       id="new-announcement"
+                       placeholder="Announcement">
+
+                <button onclick="dbPublishAnnouncement()">
+
+                    Broadcast
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="supabase.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Student Dashboard</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+    <nav>
+
+        <h2>Student Dashboard</h2>
+
+        <button onclick="darkMode()"
+                class="theme-toggle-btn">
+
+            Dark Mode
+
+        </button>
+
+    </nav>
+
+    <div class="dashboard">
+
+        <div class="grid">
+
+            <div class="card">
+
+                <h2>Attendance</h2>
+
+                <p id="attendance-value">
+                    72%
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h2>Assignments</h2>
+
+                <p id="student-assignment">
+                    Loading...
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h2>Announcements</h2>
+
+                <p id="student-announcement">
+                    Loading...
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="supabase.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
